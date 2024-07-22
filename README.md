@@ -44,3 +44,8 @@ Simple DLL Injector is a versatile C++ application designed to inject DLL files 
 - `CreateRandomFolder`: Creates a random folder in a specified directory.
 - `DeleteFolder`: Deletes a specified folder and its contents.
 
+## Notes
+
+ - Ensure you have the necessary permissions to run the program.
+ - The program targets the javaw.exe process specifically.
+ - Temporary files and directories will be created and deleted during the injection process.
