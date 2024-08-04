@@ -53,7 +53,7 @@ bool DownloadFile(const std::string& url, const std::string& filePath) {
     return true;
 }
 
-DWORD GetProcessIdByName(const char* processName) {
+DWORD GetProcess(const char* processName) {
     PROCESSENTRY32 pe32;
     pe32.dwSize = sizeof(PROCESSENTRY32);
 
@@ -198,7 +198,7 @@ int main() {
         return 1;
     }
 
-    DWORD processId = GetProcessIdByName("javaw.exe");
+    DWORD processId = GetProcess("javaw.exe");
     if (processId == 0) {
         std::cout << "Процесс javaw.exe не найден.\n";
         return 1;
